@@ -1,4 +1,4 @@
-# Phoenix tutorial part 2
+# Phoenix tutorial part 3
 # Finishing our Authentication Module
 
 ### In this tutorial, we finish the User and Authenticaiton model for our chat app. 
