@@ -1,0 +1,13 @@
+<%= if logged_in?(@conn) do %>
+	<%= link "Sign Out", to: session_path(@conn, :delete, :access),
+		method: :delete, class: "btn btn-danger" %>
+	<%= link "#{current_user(@conn).email}", to: user_path(@conn, :show, current_user(@conn)) %>
+	
+	<% else %>
+	<%= link "Create an Account!", to: user_path(@conn, :new), 
+		class: "btn btn-info" %>
+	<%= link "Sign in", to: session_path(@conn, :new), 
+      class: "btn btn-primary" %>
+
+
+<% end %>
